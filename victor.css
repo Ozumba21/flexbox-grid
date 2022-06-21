@@ -1,0 +1,269 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: "poppins", sans-serif;
+    line-height:1.6rem;
+    background-image: url("bg-intro-desktop.png");
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:white;
+
+}
+.container{
+     margin: 50px auto;
+     display:flex;
+     justify-content:space-around;
+     flex-wrap: wrap;
+     flex:1;
+     text-align:center;
+     background-color:hsl(0,100%, 74%);
+     /* background-size: cover; */
+     height: 80vh;
+     width: 80vw;
+    
+         
+}
+.container > div{
+    flex: 1;
+}
+button{
+    padding: 30px 10px;
+    margin: 10px 10px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    text-align:center;
+    align-items: center;
+
+
+    
+}
+.header.cane{
+    margin-right:100px;
+}
+#nate-love{
+
+        padding: 15px 10px;
+        margin-left: 50px;
+        
+        width: 30vw;
+        border-radius: 10px;
+        border: none;
+        background-color: hsl(249, 10%, 26%) ;
+        color:white;
+        box-shadow: 0 5px rgba(0,0,0, 0.2);
+    
+    
+        
+    
+}
+.victor-fuck{
+    margin: 40px;
+
+}
+#coming{
+
+        padding: 15px 10px;
+        /* margin-left: 30px; */
+        width: 90%;
+        border-radius: 10px;
+        border: none;
+        align-items: center;
+        background-color: hsl(154, 59%, 51%);
+        color:white;
+        font-weight: bold;
+    
+        
+    
+}
+#coming:hover{
+    padding: 20px 15px;
+    top: 2px;
+}
+
+form{
+    padding: 10px 10px;
+    margin: 10px;
+}
+label{
+    align-items: center;
+}
+
+input[type ="text"],
+
+input[type ="email"],
+
+input[type ="password"]{
+    display: block;
+    /* margin: 10px 10px; */
+    padding: 10px 10px;
+    width: 100%;
+    font-size: 1rem;
+    border: 1px solid hsl(246, 25%, 77%);
+    align-items: center;
+    border-radius: 5px;
+    font-family:  "poppins", sans-serif;
+    
+
+}
+input:focus{
+    border: 1.3px solid hsl(248, 32%, 49%);
+    outline: none;
+    
+
+}
+.cane-flask{
+    background-color: whitesmoke;
+    height: 60vh;
+    width: 30vw;
+    border-radius: 10px;
+    margin-left: 50px;
+    box-shadow: 0 5px rgba(0,0,0, 0.2);
+}
+
+button:hover{
+    padding: 10px 10px;
+}
+.header{
+    height: 10px;
+    margin: 200px 50px;
+    text-align: left;
+    flex: 1;
+    font-size: 13px;
+}
+.header p{
+    margin-left: 23px;
+    margin-top:10px;
+    font-size: 15px;
+}
+.h1{
+    margin:0 20px;
+    font-size:20px;
+    font-weight: bolder;
+    line-height: 2rem;
+}
+.principal{
+    font-size:12px;
+    text-align: center;
+    color: #b9b9b9;
+}
+/* .cane-flask small{
+    position:absolute;
+
+    bottom: -20px;
+    right: 0;
+} */
+input:valid{
+    outline: none;
+    border: none;
+    border: 1px solid hsl(154, 59%, 51%)
+
+}
+
+input:invalid{
+    outline: none;
+    border: none;
+    border: 2px solid hsl(0,100%, 74%);
+    background-image: url("icon-error.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-origin: content-box;
+    font-size: 14px;
+    font-weight: 600
+}
+input:invalid + small{
+    display: block;
+    font-size: 9px;
+    font-weight:600;
+    font-style: italic;
+    color: hsl(0,100%, 74%);
+    margin-left: 65%;
+}
+
+small {
+    color: red;
+    display:none;
+    text-align: right;
+    font-size: 12px;
+    margin-top: 5px;
+    
+}
+
+span{
+    margin-bottom: 100px;
+}
+span a {
+    text-decoration: none;
+    color: red;
+    font-weight: 600;
+    font-style: italic;
+}
+
+@media (max-width: 1000px){
+    .container{
+        flex-direction:column;
+        display: block;
+        margin-bottom: 200px;
+        text-align: center;
+        background-color:hsl(0,100%, 74%);
+        height:100%;
+        width: 100%;
+    }
+    .header{
+        display:block;
+        text-align: center;
+    
+    }
+    .header p{
+        text-align: left;
+    }
+    body{
+        background-color:hsl(0,100%, 74%);
+        margin-bottom: 100px;
+    }
+    .victor-fuck{
+        display: block;
+        flex-direction: column;
+    }
+    #nate-love{
+
+        padding: 15px 10px;
+        margin-left: 50px;
+        
+        width: 70vw;
+        border-radius: 10px;
+        border: none;
+        background-color: hsl(249, 10%, 26%) ;
+        color:white;
+        box-shadow: 0 5px rgba(0,0,0, 0.2);
+
+}
+#coming{
+
+    padding: 15px 10px;
+    /* margin-left: 30px; */
+    width: 90%;
+    border-radius: 10px;
+    border: none;
+    align-items: center;
+    background-color: hsl(154, 59%, 51%);
+    color:white;
+    font-weight: bold;
+
+    
+
+}
+.cane-flask{
+    background-color: whitesmoke;
+    height: 75vh;
+    width: 70vw;
+    border-radius: 10px;
+    margin-left: 50px;
+    box-shadow: 0 5px rgba(0,0,0, 0.2);
+}
+}
